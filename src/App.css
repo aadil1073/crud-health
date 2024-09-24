@@ -1,0 +1,186 @@
+.App {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  /* Header */
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+    font-weight: 650;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Main container */
+  main {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Form styling */
+  form {
+    background-color: tan;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 2rem;
+  }
+  
+  form h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  form button {
+    background-color: #29e455;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem; /* Add some space above the button */
+  }
+  
+  form button:hover {
+    background-color: #218838;
+  }
+  
+  /* Service List styling */
+.ServiceList {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 2rem;
+  }
+  
+  .ServiceList ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+  }
+  
+  .ServiceList li {
+    background-color: tan;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    flex: 0 1 calc(45% - 10px);
+    margin-bottom: 1rem;
+    text-align: center; 
+  }
+  
+  .ServiceList h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .ServiceList p {
+    margin: 0.25rem 0;
+    color: #666;
+  }
+
+.ServiceList button {
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ServiceList .btn-warning {
+    background-color: #ffc107; /* Yellow for Edit */
+    color: white;
+  }
+  
+  .ServiceList .btn-warning:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+  }
+  
+  .ServiceList .btn-danger {
+    background-color: #dc3545; /* Red for Delete */
+    color: white;
+  }
+  
+  .ServiceList .btn-danger:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  
+  form button {
+    background-color: #28a745; /* Green for Add */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  
+  /* Success alert */
+  .alert {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .ServiceList,
+    form {
+      max-width: 100%;
+    }
+  }
+  
